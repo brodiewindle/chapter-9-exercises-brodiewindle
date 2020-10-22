@@ -19,7 +19,7 @@ public class FibonacciAndFactorial {
             BigInteger NBigInteger = BigInteger.valueOf(N);  // Convert to big integer
             System.out.println("factorial(" + N + ") is " + factorial(NBigInteger));
             if (N > 40) {
-                System.out.println("N is too big to compute fibonacci(N) recursively");
+                System.out.println("woo up n is too big my dude");
             } else {
                 System.out.println("fibonacci(" + N + ") is " +
                         fibonacci(N) + "   (recursively)");
@@ -31,7 +31,7 @@ public class FibonacciAndFactorial {
 
 
     static BigInteger nonRecursiveFibonacci(int N) {
-        assert N >= 0 : "fibonacci(n) is only defined for non-negative n";
+        assert N >= 0 : "fibonacci(n) can only exist > 0";
         if (N == 0 || N == 1) {
             return BigInteger.ONE;
         } else {
@@ -48,8 +48,8 @@ public class FibonacciAndFactorial {
 
 
     static int fibonacci(int N) {
-        assert N >= 0 : "fibonacci(n) is only defined for non-negative n";
-        assert N <= 40 : "n is to large to compute fibonacci(N) recursively";
+        assert N >= 0 : "fibonacci(n) can only exist > 0";
+        assert N <= 40 : "woo up n is too big my dude";
         if (N == 0 || N == 1) {
             return 1;
         } else {
@@ -59,7 +59,7 @@ public class FibonacciAndFactorial {
 
 
     static BigInteger factorial(BigInteger N) {
-        assert N.signum() >= 0 : "factorial(n) is only defined for non-negative n";
+        assert N.signum() >= 0 : "fibonacci(n) can only exist > 0";
         if (N.equals(BigInteger.ZERO)) {
             return BigInteger.ONE;
         } else {
